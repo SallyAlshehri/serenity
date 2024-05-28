@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenity</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="../src/input.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- swiper css -->
+<link rel="stylesheet" href="./cdn.jsdelivr.net_npm_swiper@8.4.7_swiper-bundle.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- start header section -->
+    <header class="">
+        <div class="container">
+        <h1 class="  flex justify-center p-3   ">Serenity</h1>
+        <nav class="navbar border-gray-200 flex p-3 justify-center   container mx-auto px-4 ">
+     
+            <ul class="flex gap-10">
+               <a href="#"> <li>Home</li> </a> 
+               <a href="#"> <li>Categories</li> </a> 
+               <a href="#"> <li>Best Sellers</li> </a> 
+               <a href="#"> <li>Books</li> </a> 
+               <a href="#"> <li>Book Club</li> </a> 
+            </ul>
+
+        </nav>
+
+        <div class="icons flex justify-center">
+            <div class="fa fa-bars" id="menu-btn"></div>
+            <div class="fa fa-search" id="search-btn"></div>
+            <div class="fa fa-user" id="login-btn"></div>   
+              <div class="fa fa-shopping-cart" id="cart-btn"></div>
+              <div class=" fa fa-solid fa-heart " id="likes-btn"></div>
+            
+        </div>
+
+        <!-- start search -->
+        <form class="search-form flex justify-center mt-4 absolute ">
+            <input class="p-2.5" type="search" id="search-box" placeholder="Type to search...">
+
+        </form>
+          <!-- end search -->
+
+            <!-- start shopping cart  -->
+     <div class="shopping-cart h-80 flex gap-2.5 flex-col relative w-60 justify-center items-center left-[39%]   bg-white">
+
+        <!-- box 1 -->
+        <div class="box  items-center flex gap-[15px] pt-3">
+
+            <img src="../src/imgs/book-1.png" alt="" class="w-[40px]">           
+            <div class="content">
+                <h3> The Scary Forest</h3>
+                <span class="price">$5.99 / </span>
+                <span class="quantity">Qty:1</span>
+                <i class="fa fa-trash"></i>
+            </div>
+        </div>
+        <!-- box 2 -->
+        <div class="box  items-center flex gap-[15px]">
+         
+            <img src="../src/imgs/book-2.png" alt="" class="w-[40px]">
+            <div class="content">
+                <h3>The Young Wizard</h3>
+                <span class="price">$5.99 /</span>
+                <span class="quantity">Qty:1</span>
+                <i class="fa fa-trash"></i>
+            </div>
+        </div>
+        <!-- box 3 -->
+        <div class="box  items-center flex gap-[15px]">
+         
+            <img src="../src/imgs/book-3.png" alt="" class="w-[40px]">
+            <div class="content">
+                <h3>Our Butterfly </h3>
+                <span class="price">$5.99 /</span>
+                <span class="quantity">Qty:1</span>
+                <i class="fa fa-trash"></i>
+            </div>
+        </div>
+        
+        <div class="total">Total :17.97$</div> 
+     <a href="#" class="btn p-2.5 bg-linen">Checkout</a> 
+     </div> 
+
+         <!-- end shopping cart  -->
+
+       <!-- start likes    -->
+       <div class="likes-cart h-80 flex gap-2.5 flex-col relative w-60 justify-center items-center left-[39%]   bg-white">
+
+        <!-- box 1 -->
+        <div class="box  items-center flex gap-[15px] pt-3">
+
+            <img src="../src/imgs/book-1.png" alt="" class="w-[40px]">           
+            <div class="content">
+                <h3> The Scary Forest</h3>
+                <span class="price">$5.99 /</span>
+                <span class="quantity">Qty:1</span>
+                <i class="fa-solid fa-heart like-icon"></i>
+            </div>
+        </div>
+        <!-- box 2 -->
+        <div class="box  items-center flex gap-[15px]">
+         
+            <img src="../src/imgs/book-2.png" alt="" class="w-[40px]">
+            <div class="content">
+                <h3>The Young Wizard</h3>
+                <span class="price">$5.99 / </span>
+                <span class="quantity">Qty:1</span>
+                <i class="fa-solid fa-heart like-icon"></i>
+            </div>
+        </div>
+        <!-- box 3 -->
+        <div class="box  items-center flex gap-[15px]">
+         
+            <img src="../src/imgs/book-3.png" alt="" class="w-[40px]">
+            <div class="content">
+                <h3>Our Butterfly </h3>
+                <span class="price">$5.99 /</span>
+                <span class="quantity">Qty:1</span>
+                <i class="fa-solid fa-heart like-icon"></i>
+            </div>
+        </div>
+        
+        <div class="total">Total :17.97$</div> 
+     <a href="#" class="btn p-2.5 bg-linen">Move To Cart</a> 
+     </div> 
+
+         <!-- end likes  -->
+
+  <!-- start login -->
+     <form action="#" class="login-form">
+<h3>login now</h3>
+<input type="email" placeholder="Your Email" class="box">
+<input type="password" placeholder="Your Password" class="box">
+<p>Forget Your Password <a href="#">Click Here</a></p>
+<p>Don't Have An Account <a href="#">Create Now</a></p>
+<input type="submit" value="Login Now" class="btn">
+     </form>
+      <!-- end login -->
+     </div>
+    </header> 
+    <!-- end header section -->
+
+
+    <!-- start home section -->
+
+    <div class="home" id="home">
+      <div class="home-container container grid">
+<div class="home-data">
+<h1 class="home-title">
+    Browse & Discover
+</h1>
+<p class="home-description">
+    Dive into the vast expanse of literature awaiting you as you explore this curated selection of books. Whether you're seeking thrilling adventures, heartwarming tales, thought-provoking narratives, or insightful non-fiction, you'll find a world of possibilities right at your fingertips.
+</p>
+
+</div>
+<div class="home-images swiper">
+    <div class="home-swiper swiper-container ">
+        <div class="swiper-wrapper">
+            <article class="home-article swiper-slide">
+                <img src="../src/imgs/book-1.png " alt="" class="home-img ">
+            </article>
+            <article class="home-article swiper-slide">
+                <img src="../src/imgs/book-2.png " alt="" class="home-img book-2 ">
+            </article>
+            <article class="home-article swiper-slide">
+                <img src="../src/imgs/book-3.png " alt="" class="home-img  ">
+            </article>
+           
+            
+             
+        </div>
+   
+    </div>
+    </div>
+</div>
+
+      </div>
+    </div>
+    <!-- end home section -->
+
+    <!-- start Categories -->
+<div class="categories">
+    <h2 class="title">Categories</h2>
+    <div class="container">
+        <div class="boxes">
+         <div class="cat-box">
+        <img src="../src/imgs/healthy-heart.png" alt="">
+        <span>Healthy</span>
+        <a>20+ Books <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="cat-box">
+        <img src="../src/imgs/open-book.png" alt="">
+        <span>Literary</span>
+        <a>40+ Books <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="cat-box">
+        <img src="../src/imgs/spell-book.png" alt="">
+        <span>Fantasy</span>
+        <a>56+ Books <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="cat-box">
+        <img src="../src/imgs/annonymous.png" alt="">
+        <span>Mystery</span>
+        <a>20+ Books <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="cat-box">
+        <img src="../src/imgs/ghost.png" alt="">
+        <span>Horror</span>
+        <a>10+ Books <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="cat-box">
+        <img src="../src/imgs/location.png" alt="">
+        <span>Adventure</span>
+        <a>23+ Books <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="cat-box">
+        <img src="../src/imgs/kids.png" alt="">
+        <span>Kids</span>
+        <a>17+ Books <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="cat-box">
+        <img src="../src/imgs/chef.png" alt="">
+        <span>Cooking</span>
+        <a>23+ Books <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+        </div>
+   </div>
+</div>
+
+   <!-- end Categories -->
+    <!--start best seller -->
+    <div class="best-seller">
+        <h2 class="title">Best sellers</h2>
+<div class="container mySwiper">  
+       <div class="swiper-wrapper">
+
+    
+      <div class="box swiper-slide">
+
+
+        <div class="box-content">
+        
+            <div class="box-image box-1"></div>
+           <h4>Alchemy</h4> 
+           <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+         
+           <span>5.99$</span>
+             <div class="cart-like">
+                  <i class=" fa fa-solid fa-cart-shopping box-cart"></i>
+                  <i class=" fa fa-solid fa-heart box-like"></i>
+            </div>
+            
+        </div>
+      </div>
+
+      <div class="box swiper-slide">
+    
+        <div class="box-content ">
+            <div class="box-image box-2"></div>
+           <h4>Eye</h4> 
+           <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+       
+           <span>5.76$</span>
+           <div class="cart-like">
+            <i class=" fa fa-solid fa-cart-shopping box-cart"></i>
+            <i class=" fa fa-solid fa-heart box-like"></i>
+      </div>
+        </div>
+      </div>
+
+      <div class="box swiper-slide">
+      
+        <div class="box-content">
+            <div class="box-image box-3"></div>
+           <h4>Midnight</h4> 
+           <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+
+           <span>10.40$</span>
+           <div class="cart-like">
+            <i class=" fa fa-solid fa-cart-shopping box-cart"></i>
+            <i class=" fa fa-solid fa-heart box-like"></i>
+      </div>
+        </div>
+      </div>
+
+      <div class="box swiper-slide">
+
+        <div class="box-content">
+            <div class="box-image box-4"></div>
+            <h4>The Young Wizard</h4> 
+            <div class="rate">
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+          
+            <span>7.90$</span>
+            <div class="cart-like">
+                <i class=" fa fa-solid fa-cart-shopping box-cart"></i>
+                <i class=" fa fa-solid fa-heart box-like"></i>
+          </div>
+         </div>
+      </div>
+      <div class="box swiper-slide">
+
+        <div class="box-content">
+            <div class="box-image box-5"></div>
+            <h4>Our Butterfly</h4> 
+            <div class="rate">
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="filled fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            <!-- <p>Olivia Wilson</p> -->
+            <span>20.7$</span>
+            <div class="cart-like">
+                <i class=" fa fa-solid fa-cart-shopping box-cart"></i>
+                <i class=" fa fa-solid fa-heart box-like"></i>
+          </div>
+         </div>
+      </div>   
+   </div>
+    </div>
+    </div>
+    <!-- end best seller -->
+<!-- start books -->
+    <div class="books">
+<h2 class="title">Books</h2>
+<div class="container">
+<div class="links">
+    <div class="filter_buttons">
+        <button class="active" data-name="all">show all</button>
+        <button data-name="literary">Literary</button>
+        <button data-name="fantasy">Fantasy</button>
+        <button data-name="mystery">Mystery</button>
+        <button data-name="horror">Horror</button>
+        <button data-name="adventure">Adventure</button>
+        <button data-name="healthy">Healthy</button>
+        <button data-name="kids">Kids</button>
+        <button data-name="cooking">Cooking</button>
+      </div>
+   
+
+</div>
+<div class="cards filterable_cards">
+        <div class="card-content "data-name="mystery">
+        
+            <div class="card-image card-1"></div>
+           <h4>The Scary Forest</h4> 
+           <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+         
+           <span>5.99$</span>
+             <div class="cart-like">
+                  <i class=" fa fa-solid fa-cart-shopping box-cart"></i>
+                  <i class=" fa fa-solid fa-heart box-like"></i>
+            </div>
+            
+        </div>
+
+
+        <div class="card-content" data-name="fantasy">
+        
+            <div class="card-image card-2"></div>
+           <h4>The Young Wizard</h4> 
+           <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+         
+           <span>5.99$</span>
+             <div class="cart-like">
+                  <i class=" fa fa-solid fa-cart-shopping box-cart"></i>
+                  <i class=" fa fa-solid fa-heart box-like"></i>
+            </div>
+            
+        </div>
+
+        <div class="card-content" data-name="literary">
+        
+            <div class="card-image card-3"></div>
+           <h4>Our Butterfly</h4> 
+           <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+         
+           <span>5.99$</span>
+             <div class="cart-like">
+                  <i class=" fa fa-solid fa-cart-shopping box-cart"></i>
+                  <i class=" fa fa-solid fa-heart box-like"></i>
+            </div>
+            
+        </div>
+        <div class="card-content" data-name="literary">
+        
+            <div class="card-image card-4"></div>
+           <h4>Alchemy</h4> 
+           <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+         
+           <span>5.99$</span>
+             <div class="cart-like">
+                  <i class=" fa fa-solid fa-cart-shopping box-cart"></i>
+                  <i class=" fa fa-solid fa-heart box-like"></i>
+            </div>
+            
+        </div>
+        <div class="card-content" data-name="mystery">
+        
+            <div class="card-image card-5"></div>
+           <h4>Eye</h4> 
+           <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+         
+           <span>5.99$</span>
+             <div class="cart-like">
+                  <i class=" fa fa-solid fa-cart-shopping box-cart"></i>
+                  <i class=" fa fa-solid fa-heart box-like"></i>
+            </div>
+            
+        </div>
+        <div class="card-content"  data-name="adventure">
+        
+            <div class="card-image card-6"></div>
+           <h4>Midnight</h4> 
+           <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+         
+           <span>5.99$</span>
+             <div class="cart-like">
+                  <i class=" fa fa-solid fa-cart-shopping box-cart"></i>
+                  <i class=" fa fa-solid fa-heart box-like"></i>
+            </div>
+            
+        </div>
+        <div class="card-content" data-name="fantasy">
+        
+            <div class="card-image card-7"></div>
+           <h4>Conquest Of Flames </h4> 
+           <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+         
+           <span>5.99$</span>
+             <div class="cart-like">
+                  <i class=" fa fa-solid fa-cart-shopping box-cart"></i>
+                  <i class=" fa fa-solid fa-heart box-like"></i>
+            </div>
+            
+        </div>
+        <div class="card-content" data-name="literary" >
+        
+            <div class="card-image card-8"></div>
+           <h4>The Look At The Book</h4> 
+           <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+         
+           <span>5.99$</span>
+             <div class="cart-like">
+                  <i class=" fa fa-solid fa-cart-shopping box-cart"></i>
+                  <i class=" fa fa-solid fa-heart box-like"></i>
+            </div>
+            
+        </div>
+        <div class="card-content" data-name="healthy">
+        
+            <div class="card-image card-9"></div>
+           <h4>Healthy Lifestyle</h4> 
+           <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+         
+           <span>5.99$</span>
+             <div class="cart-like">
+                  <i class=" fa fa-solid fa-cart-shopping box-cart"></i>
+                  <i class=" fa fa-solid fa-heart box-like"></i>
+            </div>
+            
+        </div>
+        <div class="card-content" data-name="healthy">
+        
+            <div class="card-image card-10"></div>
+           <h4>Cook Book</h4> 
+           <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+         
+           <span>5.99$</span>
+             <div class="cart-like">
+                  <i class=" fa fa-solid fa-cart-shopping box-cart"></i>
+                  <i class=" fa fa-solid fa-heart box-like"></i>
+            </div>
+            
+        </div>
+        <div class="card-content" data-name="adventure">
+        
+            <div class="card-image card-11"></div>
+           <h4>Rise</h4> 
+           <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+         
+           <span>5.99$</span>
+             <div class="cart-like">
+                  <i class=" fa fa-solid fa-cart-shopping box-cart"></i>
+                  <i class=" fa fa-solid fa-heart box-like"></i>
+            </div>
+            
+        </div>
+        <div class="card-content" data-name="literary">
+        
+            <div class="card-image card-12"></div>
+           <h4>The Heart</h4> 
+           <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+         
+           <span>5.99$</span>
+             <div class="cart-like">
+                  <i class=" fa fa-solid fa-cart-shopping box-cart"></i>
+                  <i class=" fa fa-solid fa-heart box-like"></i>
+            </div>
+            
+        </div>
+
+        <div class="card-content" data-name="horror">
+        
+            <div class="card-image card-13"></div>
+           <h4>The Lost Room</h4> 
+           <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+         
+           <span>5.99$</span>
+             <div class="cart-like">
+                  <i class=" fa fa-solid fa-cart-shopping box-cart"></i>
+                  <i class=" fa fa-solid fa-heart box-like"></i>
+            </div>
+            
+        </div>
+        <div class="card-content" data-name="horror">
+        
+            <div class="card-image card-14"></div>
+           <h4>Can You Hear Me?</h4> 
+           <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+         
+           <span>5.99$</span>
+             <div class="cart-like">
+                  <i class=" fa fa-solid fa-cart-shopping box-cart"></i>
+                  <i class=" fa fa-solid fa-heart box-like"></i>
+            </div>
+            
+        </div>
+        <div class="card-content" data-name="literary">
+        
+            <div class="card-image card-15"></div>
+           <h4>One Night</h4> 
+           <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+         
+           <span>5.99$</span>
+             <div class="cart-like">
+                  <i class=" fa fa-solid fa-cart-shopping box-cart"></i>
+                  <i class=" fa fa-solid fa-heart box-like"></i>
+            </div>
+            
+        </div>
+        <div class="card-content" data-name="kids">
+        
+            <div class="card-image card-16"></div>
+           <h4>Magic Story</h4> 
+           <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+         
+           <span>5.99$</span>
+             <div class="cart-like">
+                  <i class=" fa fa-solid fa-cart-shopping box-cart"></i>
+                  <i class=" fa fa-solid fa-heart box-like"></i>
+            </div>
+            
+        </div>
+        <div class="card-content" data-name="cooking">
+        
+            <div class="card-image card-17"></div>
+           <h4>Dessert Recipes</h4> 
+           <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+         
+           <span>5.99$</span>
+             <div class="cart-like">
+                  <i class=" fa fa-solid fa-cart-shopping box-cart"></i>
+                  <i class=" fa fa-solid fa-heart box-like"></i>
+            </div>
+            
+        </div>
+        <div class="card-content" data-name="cooking">
+        
+            <div class="card-image card-18"></div>
+           <h4>Cooking Book</h4> 
+           <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+         
+           <span>5.99$</span>
+             <div class="cart-like">
+                  <i class=" fa fa-solid fa-cart-shopping box-cart"></i>
+                  <i class=" fa fa-solid fa-heart box-like"></i>
+            </div>
+            
+        </div>
+        <div class="card-content" data-name="horror">
+        
+            <div class="card-image card-19"></div>
+           <h4>The Sound Of  Silence</h4> 
+           <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+         
+           <span>5.99$</span>
+             <div class="cart-like">
+                  <i class=" fa fa-solid fa-cart-shopping box-cart"></i>
+                  <i class=" fa fa-solid fa-heart box-like"></i>
+            </div>
+            
+        </div>
+        <div class="card-content" data-name="kids">
+        
+            <div class="card-image card-20"></div>
+           <h4>Fairy Wings</h4> 
+           <div class="rate">
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="filled fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+         
+           <span>5.99$</span>
+             <div class="cart-like">
+                  <i class=" fa fa-solid fa-cart-shopping box-cart"></i>
+                  <i class=" fa fa-solid fa-heart box-like"></i>
+            </div>
+            
+        </div>
+
+</div>
+</div>
+    </div>
+
+    <!-- start Discounts -->
+
+    <div class="discounts">
+        <div class="container">
+<div class="content">
+   
+    <div class="text">
+        <h3>Unlock 10% Savings </h3>
+        <p>Enter Your Email to Get 10% Discount on Your Next Order!</p>
+         <div class="input">
+         <input type="email" placeholder=" Write Your Email" >
+         <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+    </div>
+
+     <img src="../src/imgs/books.png" alt="">
+</div></div>
+
+    </div>
+
+     <!-- end Discounts -->
+
+    <!--start book club -->
+
+<div class="book-club">
+    <div class="home-images">
+        <div class="container ">
+            <div class="text">
+                <h3>Book of the Month</h3>
+                <p>Explore This Month's Must-Reads</p>
+                <button>Join Us</button>
+            </div>
+            <div class="wrapper">
+            
+                <article class="article">
+                    <span class="outlined-text">02</span>
+                    <img src="../src/imgs/book-5.png " alt="" class="home-img ">
+                </article>
+                <article class="article book-month-1 ">
+                    <span class="outlined-text">01</span>
+                    <img src="../src/imgs/book-6.png " alt="" class="home-img book-month ">
+                </article>
+                <article class="article ">
+                    <span class="outlined-text">03</span>
+                    <img src="../src/imgs/book-7.png " alt="" class="home-img  ">
+                </article>
+               
+                
+                 
+            </div>
+       
+        </div>
+        </div>
+</div>
+    <!--end book club -->
+
+
+    <!-- start footer -->
+<div class="footer">
+<div class="container">
+<div class="box">
+    <h3 class="heading">Serenity</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Tempore laboriosam saepe, recusandae voluptas consectetur magni ad in ullam tenetur
+         ut aperiam dolore!
+         Similique accusantium consequatur cum delectus ex suscipit illum?</p>
+</div>
+<div class="box important">
+    <h3>Important Links </h3>
+        <ul class="links important">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Cart</a></li>
+          </ul>
+   
+</div>
+<div class="box">
+    <h3>Support</h3>
+    <ul class="links support">
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Return and Exchange Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#"> Privacy Policy</a></li>
+      </ul>
+
+
+</div>
+<div class="box">
+    <h3>Stay Connected </h3>
+    <ul class="social">
+        <li>
+          <a href="#" class="facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="youtube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </li>
+        <li>
+            <a href="#" class="instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+      </ul>
+<div class="app">
+    <img src="../src/imgs/appstore.png" alt="">
+    <img src="../src/imgs/google-play.png" alt="">
+</div>
+</div>
+</div>
+
+
+<p class="copyright">Made With  <i class="fa-solid fa-heart fa-beat"></i>  By Sally</p>
+
+</div>
+
+    <!-- end footer -->
+<!-- swiper js -->
+    <script src="./cdn.jsdelivr.net_npm_swiper@8.4.7_swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+
+   
+</body>
+</html>
